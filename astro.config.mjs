@@ -4,16 +4,19 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://nocturnale.github.io',
+	base: '/indoc',
+
 	integrations: [
 		starlight({
 			title: 'InDoc',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/Nocturnale?tab=repositories' }],
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/Nocturnale' }],
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Introduction',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Example Guide', slug: 'introduction/example' },
 					],
 				},
 				{
