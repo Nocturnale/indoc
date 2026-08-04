@@ -10,7 +10,7 @@ export default defineConfig({
 
 	integrations: [
 		starlight({
-			
+			plugins: [catpuccin()],
 			title: 'InDoc',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/Nocturnale' }],
 			sidebar: [
@@ -26,7 +26,7 @@ export default defineConfig({
 					autogenerate: { directory: 'reference' },
 				},
 			],
-			plugins: [starlightCatpuccin()],
+
 		}),
 	],
 });
